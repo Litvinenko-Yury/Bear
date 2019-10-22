@@ -2,24 +2,24 @@
 /*Typography*/
 /*Font, line-height, headings.*/
 //=============================
-$font-family: "Open Sans",  "Arial", sans-serif;
+$font-family: "Open Sans", "Arial", sans-serif;
 
-//$font-size-h1: px;
-//$font-size-h2: px;
+$font-size-h1: 27px;
+$font-size-h2: 25px;
 //$font-size-h3: px;
 //$font-size-h4: px;
 //$font-size-h5: px;
 //$font-size-h6: px;
 
 //$font-size--xl-large: px;
-//$font-size--x-large: px;
-//$font-size--large: px;
-//$font-size--larger: px;
-//$font-size: px;
-//$font-size--smaller: px;
+$font-size--x-large: 20px;
+$font-size--large: 18px;
+$font-size--larger: 17px;
+$font-size: 15px;
+$font-size--smaller: 13px;
 //$font-size--small: px;
 
-//$line-height: em;
+$line-height: 1.6em;
 //$line-height-auto: 1.2em;
 
 //================
@@ -29,7 +29,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$color-main--lightest: ;
 //$color-main--lighten: ;
 //$color-main--light: ;
-//$color-main: #283645;
+$color-main: #63d1bb;
 //$color-main--dark: ;
 //$color-main--darken: ;
 //$color-main--darkest: ;
@@ -52,8 +52,7 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$gray--darkenest: ;
 //$gray--darkest: ;
 
-//$text-color: ; // Global text color on <body>;
-
+$text-color: #444444; // Global text color on <body>;
 
 //=============================
 //===Components===
@@ -65,7 +64,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 
 //$border-radius-base: ;
 
-
 //=============================
 //===Links====
 //=============================
@@ -73,7 +71,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$link-color--active: ;
 //$link-color--hover: ;
 //$link-color--down: ;
-
 
 //=============================
 //===Buttons===
@@ -100,7 +97,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$btn-bg-hover: ;
 //$btn-bg-active: ;
 
-
 //$btn-border-radius-base: ;
 
 //$btn-border-color-base: ;
@@ -116,7 +112,6 @@ $font-family: "Open Sans",  "Arial", sans-serif;
 //$slider-toggle--active: ;
 //$slider-toggle--hover: ;
 //$slider-toggle--down: ;
-
 
 //=============================
 //===Media queries breakpoints===
