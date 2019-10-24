@@ -1,16 +1,20 @@
 "use strict";
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__inner-toggle');
 
-/*если JS есть, показать кнопку "откр/закр" меню*/
-navMain.classList.remove('main-nav--nojs');
+var burger = document.querySelector(".burger");
+var mainNav = document.querySelector(".main-nav__list");
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.remove('main-nav--opened');
-    navMain.classList.add('main-nav--closed');
-  }
+
+/*=====*/
+//если JS включен, показыаем бургер...
+burger.classList.remove("burger--no-js");
+// ... и сворачиваем меню
+mainNav.classList.add("main-nav__list--js");
+
+/*=====*/
+//вкл/выкл анимации бургера...
+burger.addEventListener("click", function () {
+  burger.classList.toggle("burger--close");
+
+  //... и показываем/скрываем меню
+  mainNav.classList.toggle("main-nav__list--show");
 });

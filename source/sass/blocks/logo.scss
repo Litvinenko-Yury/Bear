@@ -1,0 +1,14 @@
+.logo {
+  outline: 1px dotted coral;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex; /*для позиционирования svg внутри <a>*/
+  }
+
+  & svg {
+    margin: auto; /*для позиционирования svg внутри <a>*/
+    background: #000000;
+  }
+}

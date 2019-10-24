@@ -57,7 +57,7 @@ $text-color: #444444; // Global text color on <body>;
 //=============================
 //===Components===
 //=============================
-//$content-width: ;
+$content-width--desk: 1050px;
 
 //$padding-base-vertical:;
 //$padding-base-horizontal: ;
@@ -78,8 +78,8 @@ $text-color: #444444; // Global text color on <body>;
 
 //$btn-padding-vertical--large: px;
 //$btn-padding-horizontal--large: px;
-//$btn-padding-vertical: px;
-//$btn-padding-horizontal: px;
+$btn-padding-vertical: 20px;
+$btn-padding-horizontal: 20px;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
@@ -116,8 +116,8 @@ $text-color: #444444; // Global text color on <body>;
 //=============================
 //===Media queries breakpoints===
 //=============================
-//$tablet-width: 660px;
-//$desktop-width: 960px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
 //=============================
 //===Retina queries breakpoints===
@@ -128,4 +128,5 @@ $text-color: #444444; // Global text color on <body>;
 //=============================
 //===Animate===
 //=============================
-//$transition-time ;
+$transition-time--burger: 0.2s;
+$transition-time--show: 0.2s;

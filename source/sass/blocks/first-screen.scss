@@ -1,0 +1,76 @@
+.first-screen {
+  min-height: 350px;
+  padding-top: 76px;
+  background-color: gray;
+  background-image: url("../img/rastr/bg-desert@1x.jpg");
+  background-size: cover;
+  background-position: center top;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/rastr/bg-desert@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 760px;
+    padding-top: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 746px;
+  }
+}
+
+.first-screen__title {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-bottom: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    margin-bottom: 354px;
+  }
+}
+
+.first-screen__list {
+  margin: 0;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    padding-right: 52px;
+    padding-left: 52px;
+  }
+}
+
+.first-screen__list-item {
+  outline: 1px dotted coral;
+  display: flex;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.first-screen__link {
+  outline: 1px dotted blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 20px 27px 20px 30px;
+
+  background: green;
+}
+
+.first-screen__link-svg {
+  background: coral;
+}

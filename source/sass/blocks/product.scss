@@ -1,0 +1,121 @@
+.product {
+  margin-bottom: 75px;
+  padding: 35px 30px 0 30px;
+  background: #cabe83;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 125px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative; //для задания высоты для .product__img
+    width: $content-width--desk;
+    margin: 0 auto;
+    margin-bottom: 165px;
+    padding: 35px 0 0 0;
+  }
+}
+
+.product__title-wrap {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.product__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
+}
+
+.product__subtitle {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 37px;
+    width: 100px;
+  }
+}
+
+.product__subtitle-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.product__wrapper {
+  //нужен для задания позиционирования и ширины для .product__img
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.product__inner-wrap {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+    width: 293px;
+    padding-right: 0;
+  }
+}
+
+.product__descr {
+  margin-bottom: 33px;
+}
+
+.product__list {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.product__list-key {
+  border: 1px solid gray;
+}
+
+.product__list-value {
+  border: 1px solid gray;
+}
+
+.product__img {
+  display: block;
+  margin-bottom: 30px;
+  height: 315px;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.product__price {
+  margin-bottom: 30px;
+  text-align: center;
+}

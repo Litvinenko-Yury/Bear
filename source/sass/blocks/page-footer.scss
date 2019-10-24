@@ -1,3 +1,16 @@
 .page-footer {
   margin: 0 auto;
+
+  background: #cccccc;
+}
+
+.page-footer__wrap {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+  }
 }
