@@ -4,25 +4,65 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 316px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .card__img-wrap {
-  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .card__img {
   display: block;
   height: auto;
   object-fit: cover;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    min-height: 334px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 462px;
+  }
 }
 
 .card__body {
   background: pink;
 
-  border: 1px solid red;
-
   padding: 30px;
   padding-bottom: 10px;
+  border: 1px solid red;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 2;
+    width: 100%;
+  }
 }
 
 .card__title-link {
@@ -45,6 +85,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid red;
 }
 
 .card__buy {

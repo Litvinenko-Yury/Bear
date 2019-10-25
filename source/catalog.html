@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Мишка-калаталог</title>
+  <title>Мишка-каталалог</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
@@ -78,10 +78,12 @@
         </a>
 
         <div class="card__body">
-          <a class="card__title-link" href="#">
-            <h3 class="card__title">Зайчик-попрыгайчик</h3>
-          </a>
-          <p class="card__descr">Рост 30 см, вес 200 г</p>
+          <div class="card__info">
+            <a class="card__title-link" href="#">
+              <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="card__descr">Рост 30 см, вес 200 г</p>
+          </div>
           <div class="card__footer">
             <span class="card__price">1 200 руб.</span>
             <button class="btn  card__buy" aria-label="Добавить в корзину">
@@ -105,10 +107,12 @@
         </a>
 
         <div class="card__body">
-          <a class="card__title-link" href="#">
-            <h3 class="card__title">Корзинка для белья</h3>
-          </a>
-          <p class="card__descr">Диаметр 15 см, высота 10 см</p>
+          <div class="card__info">
+            <a class="card__title-link" href="#">
+              <h3 class="card__title">Корзинка для белья</h3>
+            </a>
+            <p class="card__descr">Диаметр 15 см, высота 10 см</p>
+          </div>
           <div class="card__footer">
             <span class="card__price">690 руб.</span>
             <button class="btn  card__buy" aria-label="Добавить в корзину">
@@ -132,10 +136,12 @@
         </a>
 
         <div class="card__body">
-          <a class="card__title-link" href="#">
-            <h3 class="card__title">Большая корзинка для игрушек</h3>
-          </a>
-          <p class="card__descr">Диаметр 30 см, высота 30 см</p>
+          <div class="card__info">
+            <a class="card__title-link" href="#">
+              <h3 class="card__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="card__descr">Диаметр 30 см, высота 30 см</p>
+          </div>
           <div class="card__footer">
             <span class="card__price">1500 руб.</span>
             <button class="btn  card__buy" aria-label="Добавить в корзину">
@@ -155,6 +161,7 @@
         </svg>
         <h3 class="video__title">Процесс производства</h3>
       </div>
+
       <div class="video__img-wrap">
         <picture>
           <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
@@ -177,89 +184,82 @@
       </div>
     </article>
 
-
-
-
-
-
-
-
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <a class="logo" href="#!" aria-label="Переход на главную страницу">
+        <svg width="102" height="34" role="img">
+          <use xlink:href="#icon-cart"></use>
+        </svg>
+      </a>
 
-    <a class="logo" href="#!" aria-label="Переход на главную страницу">
-      <svg width="102" height="34" role="img">
-        <use xlink:href="#icon-cart"></use>
-      </svg>
-    </a>
+      <ul class="social">
 
-    <ul class="social">
+        <li class="social__link-wrap" title="instagram">
+          <a class="social__link" href="https://www.instagram.com/" rel="noopener" aria-label="Переход на сайт instagram">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="#icon-insta" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__link-wrap" title="facebook">
+          <a class="social__link" href="https://www.facebook.com/" rel="noopener" aria-label="Переход на сайт facebook">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="#icon-fb-mobile" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__link-wrap" title="twitter">
+          <a class="social__link" href="https://twitter.com" rel="noopener" aria-label="Переход на сайт twitter">
+            <svg width="32" height="32" role="img">
+              <use xlink:href="#icon-cart" />
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-      <li class="social__link-wrap" title="instagram">
-        <a class="social__link" href="https://www.instagram.com/" rel="noopener" aria-label="Переход на сайт instagram">
-          <svg width="16" height="16" role="img">
-            <use xlink:href="#icon-insta" />
-          </svg>
-        </a>
-      </li>
-      <li class="social__link-wrap" title="facebook">
-        <a class="social__link" href="https://www.facebook.com/" rel="noopener" aria-label="Переход на сайт facebook">
-          <svg width="16" height="16" role="img">
-            <use xlink:href="#icon-fb-mobile" />
-          </svg>
-        </a>
-      </li>
-      <li class="social__link-wrap" title="twitter">
-        <a class="social__link" href="https://twitter.com" rel="noopener" aria-label="Переход на сайт twitter">
-          <svg width="32" height="32" role="img">
-            <use xlink:href="#icon-cart" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-
-    <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" aria-label="Переход на сайт HTML-Academy">
-      <span class="copyright-link__text">РАЗРАБОТАТНО</span>
-      <svg class="copyright-link__logo" width="27" height="34" role="img">
-        <use xlink:href="#icon-htmlacademy" />
-      </svg>
-    </a>
-
+      <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" aria-label="Переход на сайт HTML-Academy">
+        <span class="copyright-link__text">РАЗРАБОТАТНО</span>
+        <svg class="copyright-link__logo" width="27" height="34" role="img">
+          <use xlink:href="#icon-htmlacademy" />
+        </svg>
+      </a>
+    </div>
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h3>
-      <span class="modal__text">Выберите размер:</span>
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <span class="modal__text">Выберите размер:</span>
 
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="field-radio">
-          <div class="field-radio__input-wrap">
-            <label class="field-radio__label">
-              <input class="field-radio__input" type="radio" name="radio-field" value="S" checked>
-              <span class="field-radio__name-text">S</span>
-            </label>
-          </div>
-
-          <div class="field-radio__input-wrap">
-            <label class="field-radio__label">
-              <input class="field-radio__input" type="radio" name="radio-field" value="M">
-              <span class="field-radio__name-text">M</span>
-            </label>
-          </div>
-
-          <div class="field-radio__input-wrap">
-            <label class="field-radio__label">
-              <input class="field-radio__input" type="radio" name="radio-field" value="L">
-              <span class="field-radio__name-text">L</span>
-            </label>
-          </div>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="field-radio">
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="S" checked>
+            <span class="field-radio__name-text">S</span>
+          </label>
         </div>
 
-        <div class="field-actions">
-          <button class="btn" type="submit">Добавить</button>
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="M">
+            <span class="field-radio__name-text">M</span>
+          </label>
         </div>
-      </form>
+
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="L">
+            <span class="field-radio__name-text">L</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field-actions">
+        <button class="btn" type="submit">Добавить</button>
+      </div>
+    </form>
   </section>
 
   <!-- <script src="js/ofi.min.js"></script>
