@@ -40,7 +40,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -56,16 +56,19 @@ p {
 h1 {
   font-size: $font-size-h1;
   font-weight: 700;
+  line-height: $line-height--h1;
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: 700;
+  line-height: $line-height--h2;
 }
 
 h3 {
-  //font-size: $font-size-h3;
-  //font-weight: 700;
+  font-size: $font-size-h3;
+  font-weight: 700;
+  line-height: $line-height--h3;
 }
 
 h4 {

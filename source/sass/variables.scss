@@ -6,7 +6,7 @@ $font-family: "Open Sans", "Arial", sans-serif;
 
 $font-size-h1: 27px;
 $font-size-h2: 25px;
-//$font-size-h3: px;
+$font-size-h3: 17px;
 //$font-size-h4: px;
 //$font-size-h5: px;
 //$font-size-h6: px;
@@ -21,6 +21,10 @@ $font-size--smaller: 13px;
 
 $line-height: 1.6em;
 //$line-height-auto: 1.2em;
+
+$line-height--h1: 1.1111em;
+$line-height--h2: 1.2em;
+$line-height--h3: 1.4118em;
 
 //================
 /*Gray and brand colors*/

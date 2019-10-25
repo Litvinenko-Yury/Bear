@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мишка-калаталог</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script> -->
+</head>
+
+<body>
+  <!--  <div style="display: none;">
+    <include src="build/img/svg_sprite.svg"></include>
+  </div> -->
+
+  <header class="page-header">
+    <div class="page-header__wrap">
+      <nav class="main-nav">
+        <div class="main-nav__inner">
+          <a class="main-nav__inner-logo" href="index.html">
+            <svg class="main-nav__inner-logo-img" width="80" height="35" role="img">
+              <title>Логотип PINK</title>
+              <use xlink:href="#icon-pink-white-mobile" />
+            </svg>
+            <!-- <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
+              <use xlink:href="#icon-pink-white-tablet" />
+            </svg>
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
+              <use xlink:href="#icon-pink-white-desktop" />
+            </svg> -->
+          </a>
+
+          <button class="burger  burger--no-js" type="button" aria-label="Показать главное меню">
+            <span>Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="main-nav__list  main-nav__list--first">
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__list  main-nav__list--second">
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Поиск по сайту</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__list  main-nav__list--third">
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Новые поступления</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Распродажа</a></li>
+        </ul>
+        <span class="main-nav__text">Бесплатная оставка по России</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="title">Каталог товаров</h1>
+
+    <ul class="catalog">
+      <li class="catalog__item  card">
+        <a class="card__img-wrap" href="#">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x"> -->
+            <img class="card__img" src="img/rastr/img-rock@1x.jpg" srcset="img/rastr/img-rock@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+          </picture>
+        </a>
+
+        <div class="card__body">
+          <a class="card__title-link" href="#">
+            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="card__descr">Рост 30 см, вес 200 г</p>
+          <div class="card__footer">
+            <span class="card__price">1 200 руб.</span>
+            <button class="btn  card__buy" aria-label="Добавить в корзину">
+              <svg width="20" height="20" role="img">
+                <use xlink:href="#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="catalog__item  card">
+        <a class="card__img-wrap" href="#">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x"> -->
+            <img class="card__img" src="img/rastr/img-rock@1x.jpg" srcset="img/rastr/img-rock@2x.jpg 2x" alt="Корзинка для белья">
+          </picture>
+        </a>
+
+        <div class="card__body">
+          <a class="card__title-link" href="#">
+            <h3 class="card__title">Корзинка для белья</h3>
+          </a>
+          <p class="card__descr">Диаметр 15 см, высота 10 см</p>
+          <div class="card__footer">
+            <span class="card__price">690 руб.</span>
+            <button class="btn  card__buy" aria-label="Добавить в корзину">
+              <svg width="20" height="20" role="img">
+                <use xlink:href="#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="catalog__item  card">
+        <a class="card__img-wrap" href="#">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x"> -->
+            <img class="card__img" src="img/rastr/img-rock@1x.jpg" srcset="img/rastr/img-rock@2x.jpg 2x" alt="Большая корзинка для игрушек">
+          </picture>
+        </a>
+
+        <div class="card__body">
+          <a class="card__title-link" href="#">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="card__descr">Диаметр 30 см, высота 30 см</p>
+          <div class="card__footer">
+            <span class="card__price">1500 руб.</span>
+            <button class="btn  card__buy" aria-label="Добавить в корзину">
+              <svg width="20" height="20" role="img">
+                <use xlink:href="#icon-cart" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <article class="video">
+      <div class="video__title-wrap">
+        <svg width="32" height="22">
+          <use xlink:href="#icon-cart" />
+        </svg>
+        <h3 class="video__title">Процесс производства</h3>
+      </div>
+      <div class="video__img-wrap">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source type="image/webp" srcset="img/rastr/img-product2@1x.webp, img/rastr/img-product2@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/rastr/panorama-tablet@1x.jpg, img/rastr/panorama-tablet@2x.jpg 2x"> -->
+          <img class="video__img" src="img/rastr/img-rock@1x.jpg" srcset="img/rastr/img-rock@2x.jpg 2x" alt="Большая корзинка для игрушек">
+        </picture>
+        <button class="btn video__btn" aria-label="Воспроизвести видеоролик">
+          <svg width="101" height="77" role="img">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="video__body">
+        <p class="video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="btn">Сделать заказ</button>
+      </div>
+    </article>
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="page-footer">
+
+    <a class="logo" href="#!" aria-label="Переход на главную страницу">
+      <svg width="102" height="34" role="img">
+        <use xlink:href="#icon-cart"></use>
+      </svg>
+    </a>
+
+    <ul class="social">
+
+      <li class="social__link-wrap" title="instagram">
+        <a class="social__link" href="https://www.instagram.com/" rel="noopener" aria-label="Переход на сайт instagram">
+          <svg width="16" height="16" role="img">
+            <use xlink:href="#icon-insta" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__link-wrap" title="facebook">
+        <a class="social__link" href="https://www.facebook.com/" rel="noopener" aria-label="Переход на сайт facebook">
+          <svg width="16" height="16" role="img">
+            <use xlink:href="#icon-fb-mobile" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__link-wrap" title="twitter">
+        <a class="social__link" href="https://twitter.com" rel="noopener" aria-label="Переход на сайт twitter">
+          <svg width="32" height="32" role="img">
+            <use xlink:href="#icon-cart" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" aria-label="Переход на сайт HTML-Academy">
+      <span class="copyright-link__text">РАЗРАБОТАТНО</span>
+      <svg class="copyright-link__logo" width="27" height="34" role="img">
+        <use xlink:href="#icon-htmlacademy" />
+      </svg>
+    </a>
+
+  </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h3>
+      <span class="modal__text">Выберите размер:</span>
+
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="field-radio">
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__label">
+              <input class="field-radio__input" type="radio" name="radio-field" value="S" checked>
+              <span class="field-radio__name-text">S</span>
+            </label>
+          </div>
+
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__label">
+              <input class="field-radio__input" type="radio" name="radio-field" value="M">
+              <span class="field-radio__name-text">M</span>
+            </label>
+          </div>
+
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__label">
+              <input class="field-radio__input" type="radio" name="radio-field" value="L">
+              <span class="field-radio__name-text">L</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field-actions">
+          <button class="btn" type="submit">Добавить</button>
+        </div>
+      </form>
+  </section>
+
+  <!-- <script src="js/ofi.min.js"></script>
+  <script>objectFitImages();</script> -->
+  <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>

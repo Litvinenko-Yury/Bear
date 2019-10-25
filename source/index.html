@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Мишка</title>
+  <title>Мишка-главная</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
@@ -45,7 +45,7 @@
         </div>
 
         <ul class="main-nav__list  main-nav__list--first">
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list  main-nav__list--second">
@@ -261,6 +261,40 @@
       </a>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h3>
+    <span class="modal__text">Выберите размер:</span>
+
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="field-radio">
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="S" checked>
+            <span class="field-radio__name-text">S</span>
+          </label>
+        </div>
+
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="M">
+            <span class="field-radio__name-text">M</span>
+          </label>
+        </div>
+
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__label">
+            <input class="field-radio__input" type="radio" name="radio-field" value="L">
+            <span class="field-radio__name-text">L</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field-actions">
+        <button class="btn" type="submit">Добавить</button>
+      </div>
+    </form>
+  </section>
 
   <!-- <script src="js/ofi.min.js"></script>
   <script>objectFitImages();</script> -->

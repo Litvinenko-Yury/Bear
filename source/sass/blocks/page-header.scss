@@ -1,3 +1,10 @@
 .page-header {
-  margin: 0 auto;
+  background: #b266b2;
+}
+
+.page-header__wrap {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: $content-width--desk;
+  }
 }

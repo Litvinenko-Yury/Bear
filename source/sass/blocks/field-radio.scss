@@ -1,0 +1,40 @@
+.field-radio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/*===стилизация radio===*/
+.field-radio__input {
+  /*прячем стандартный radio без потери доступности*/
+  position: absolute;
+  opacity: 0;
+}
+
+.field-radio__label {
+  /*подготовка места для кастом-radio = стилизация label*/
+
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.field-radio__name-text {
+  /*стилизация фона radio*/
+  display: flex;
+  width: 82px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+/*переключение состояния radio*/
+.field-radio__input:checked ~ .field-radio__name-text {
+  border: 2px solid green;
+}

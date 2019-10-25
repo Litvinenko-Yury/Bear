@@ -1,0 +1,64 @@
+.card {
+  background: #85af70;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__img-wrap {
+  cursor: pointer;
+}
+
+.card__img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__body {
+  background: pink;
+
+  border: 1px solid red;
+
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.card__title-link {
+  cursor: pointer;
+}
+
+.card__title {
+  margin-bottom: 15px;
+}
+
+.card__descr {
+  margin-bottom: 25px;
+}
+
+.card__footer {
+  outline: 1px dotted darkviolet;
+  background: yellow;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__buy {
+  outline: 1px dotted #000000;
+
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-right: 0;
+
+  border: none;
+
+  & > svg {
+    background: #000000;
+    margin: auto;
+  }
+}
