@@ -34,8 +34,8 @@ $line-height--h3: 1.4118em;
 //$color-main--lighten: ;
 //$color-main--light: ;
 $color-main: #63d1bb;
-//$color-main--dark: ;
-//$color-main--darken: ;
+$color-main--dark: #56c3b2;
+$color-main--darken: #149080;
 //$color-main--darkest: ;
 
 //$color-second--lightest: ;
@@ -49,9 +49,9 @@ $color-main: #63d1bb;
 // $gray--lightest: ;
 //$gray--lighten: ;
 //$gray--light: ;
-//$gray-base: ;
-//$gray--dark: ;
-//$gray--darken: ;
+$gray-base: #f1f1f1; //241
+$gray--dark: #e5e5e5; //230
+$gray--darken: #d3d2d2; //210
 //$gray--darker: ;
 //$gray--darkenest: ;
 //$gray--darkest: ;
