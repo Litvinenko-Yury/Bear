@@ -46,7 +46,7 @@
 
         <ul class="main-nav__list  main-nav__list--first">
           <li class="main-nav__list-item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Вязание на заказ</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list  main-nav__list--second">
           <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Поиск по сайту</a></li>
@@ -265,28 +265,30 @@
     <span class="modal__text">Выберите размер:</span>
 
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="field-radio">
-        <div class="field-radio__input-wrap">
-          <label class="field-radio__label">
-            <input class="field-radio__input" type="radio" name="radio-field" value="S" checked>
-            <span class="field-radio__name-text">S</span>
-          </label>
-        </div>
+      <fieldset class="modal__form-fieldset">
+        <ul class="field-radio-modal">
+          <div class="field-radio-modal__input-wrap">
+            <li class="field-radio-modal__label">
+              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="S" checked>
+              <span class="field-radio-modal__name-text">S</span>
+            </li>
+          </div>
 
-        <div class="field-radio__input-wrap">
-          <label class="field-radio__label">
-            <input class="field-radio__input" type="radio" name="radio-field" value="M">
-            <span class="field-radio__name-text">M</span>
-          </label>
-        </div>
+          <li class="field-radio-modal__input-wrap">
+            <label class="field-radio-modal__label">
+              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="M">
+              <span class="field-radio-modal__name-text">M</span>
+            </label>
+          </li>
 
-        <div class="field-radio__input-wrap">
-          <label class="field-radio__label">
-            <input class="field-radio__input" type="radio" name="radio-field" value="L">
-            <span class="field-radio__name-text">L</span>
-          </label>
-        </div>
-      </div>
+          <li class="field-radio-modal__input-wrap">
+            <label class="field-radio-modal__label">
+              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="L">
+              <span class="field-radio-modal__name-text">L</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
 
       <div class="field-actions">
         <button class="btn" type="submit">Добавить</button>

@@ -1,0 +1,28 @@
+.form-wrap {
+  background: #83d6b4;
+
+  padding: 30px 30px 55px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+}
+
+.form-wrap__paragraph {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-width--desk;
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}

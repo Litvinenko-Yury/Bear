@@ -1,0 +1,31 @@
+.field-actions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 25px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-width--desk;
+    margin: 0 auto;
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}
+
+.field-actions__help-text {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.field-actions__btn {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 10px 30px;
+  }
+}

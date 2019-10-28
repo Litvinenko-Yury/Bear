@@ -1,0 +1,48 @@
+.field-text {
+  @media (min-width: $tablet-width) {
+    outline: 3px dotted blue;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 165px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}
+
+.field-text__name {
+  display: block;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.field-text__input-wrap {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.field-text__input {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffb3a6;
+  border: none;
+  border-bottom: 2px solid red;
+
+  &--textarea {
+    display: block;
+    border: 2px solid red;
+  }
+}

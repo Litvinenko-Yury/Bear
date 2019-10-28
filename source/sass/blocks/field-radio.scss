@@ -1,8 +1,27 @@
 .field-radio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  outline: 1px dotted coral;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}
+
+.field-radio__input-wrap {
+  margin-bottom: 20px;
+  list-style: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /*===стилизация radio===*/
@@ -14,27 +33,50 @@
 
 .field-radio__label {
   /*подготовка места для кастом-radio = стилизация label*/
-
   position: relative;
   display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 60px;
   cursor: pointer;
 }
 
-.field-radio__name-text {
+.field-radio__name-text::before {
   /*стилизация фона radio*/
-  display: flex;
-  width: 82px;
-  height: 52px;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #444444;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background: transparent;
 
-  @media (min-width: $tablet-width) {
-    width: 112px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.field-radio__name-text:hover::before {
+  border-color: coral;
+}
+
+.field-radio__name-text:active::before {
+  border-color: yellow;
 }
 
 /*переключение состояния radio*/
-.field-radio__input:checked ~ .field-radio__name-text {
-  border: 2px solid green;
+.field-radio__input:checked ~ .field-radio__name-text::after {
+  /*стилизация активного radio*/
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: green;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
+/*делаем radio доступным с клавиатуры*/
+.field-radio__input:focus ~ .field-radio__name-text::before {
+  border-color: coral;
 }
