@@ -23,40 +23,61 @@
   <header class="page-header">
     <div class="page-header__wrap">
       <nav class="main-nav">
-        <div class="main-nav__inner">
-          <a class="main-nav__inner-logo" href="index.html">
-            <svg class="main-nav__inner-logo-img" width="80" height="35" role="img">
-              <title>Логотип PINK</title>
-              <use xlink:href="#icon-pink-white-mobile" />
-            </svg>
-            <!-- <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="img">
-              <title>Логотип PINK</title>
-              <use xlink:href="#icon-pink-white-tablet" />
-            </svg>
-            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="img">
-              <title>Логотип PINK</title>
-              <use xlink:href="#icon-pink-white-desktop" />
-            </svg> -->
-          </a>
+        <button class="burger  burger--no-js" type="button" aria-label="Показать главное меню">
+          <span>Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--1">
+            <a class="main-nav__link  main-nav__link--logo-header" href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/vector/logo-michelin.svg">
+                <source media="(min-width: 768px)" srcset="img/vector/logo-michelin.svg">
+                <img class="main-nav__logo" width="86" height="35" src="img/vector/logo-michelin.svg" alt="Логотип магазина Мишка.">
+              </picture>
+            </a>
+          </li>
 
-          <button class="burger  burger--no-js" type="button" aria-label="Показать главное меню">
-            <span>Открыть меню</span>
-          </button>
-        </div>
+          <li class="main-nav__item  main-nav__item--2">
+            <a class="main-nav__link  main-nav__link--2" href="catalog.html">Каталог товаров</a>
+          </li>
 
-        <ul class="main-nav__list  main-nav__list--first">
-          <li class="main-nav__list-item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--3">
+            <a class="main-nav__link  main-nav__link--3" href="#!">Вязание на заказ</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--4">
+            <a class="main-nav__link  main-nav__link--4" href="#!">
+              <svg class="main-nav__link-icon  main-nav__link-icon--search" width="18" height="18" role="img">
+                <title>Иконка поиска</title>
+                <use xlink:href="#icon-card" />
+              </svg>
+              <span class="main-nav__link-text  main-nav__link-text--visually-hidden">Поиск по сайту</span>
+            </a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--5">
+            <a class="main-nav__link  main-nav__link--5" href="#!">
+              <svg class="main-nav__link-icon" width="18" height="18" role="img">
+                <title>Иконка поиска</title>
+                <use xlink:href="#icon-card" />
+              </svg>
+              <span class="main-nav__link-text">Корзина: пока пуста</span>
+            </a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--6">
+            <a class="main-nav__link  main-nav__link--6" href="#!">Новые поступления</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--7">
+            <a class="main-nav__link  main-nav__link--7" href="#!">Распродажа</a>
+          </li>
+
+          <li class="main-nav__item  main-nav__item--8">
+            <span class="main-nav__text">Бесплатная доставка по России</span>
+          </li>
+
         </ul>
-        <ul class="main-nav__list  main-nav__list--second">
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Поиск по сайту</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Корзина: пока пуста</a></li>
-        </ul>
-        <ul class="main-nav__list  main-nav__list--third">
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Новые поступления</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__link" href="#!">Распродажа</a></li>
-        </ul>
-        <span class="main-nav__text">Бесплатная оставка по России</span>
       </nav>
     </div>
   </header>
@@ -68,21 +89,21 @@
       <p class="form-wrap__paragraph">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тип</legend>
-            <ul class="field-radio">
-              <li class="field-radio__input-wrap">
-                <label class="field-radio__label">
-                  <input class="field-radio__input" type="radio" name="radio-field" value="+" checked> <span class="field-radio__name-text">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="field-radio__input-wrap">
-                <label class="field-radio__label">
-                  <input class="field-radio__input" type="radio" name="radio-field" value="+"> <span class="field-radio__name-text">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Тип</legend>
+          <ul class="field-radio">
+            <li class="field-radio__input-wrap">
+              <label class="field-radio__label">
+                <input class="field-radio__input" type="radio" name="radio-field" value="+" checked> <span class="field-radio__name-text">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="field-radio__input-wrap">
+              <label class="field-radio__label">
+                <input class="field-radio__input" type="radio" name="radio-field" value="+"> <span class="field-radio__name-text">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
         <div class="form__fieldset-wrap">
           <fieldset class="form__fieldset">
@@ -127,29 +148,29 @@
           </fieldset>
         </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Фио</legend>
-            <label class="field-text">
-              <span class="field-text__name">Имя:</span>
-              <span class="field-text__input-wrap">
-                <input class="field-text__input" type="text" name="text" placeholder="Введите ваше имя*">
-              </span>
-            </label>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Фио</legend>
+          <label class="field-text">
+            <span class="field-text__name">Имя:</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="text" placeholder="Введите ваше имя*">
+            </span>
+          </label>
 
-            <label class="field-text">
-              <span class="field-text__name">Фамилия:</span>
-              <span class="field-text__input-wrap">
-                <input class="field-text__input" type="text" name="text" placeholder="Укажите фамилию*">
-              </span>
-            </label>
+          <label class="field-text">
+            <span class="field-text__name">Фамилия:</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="text" placeholder="Укажите фамилию*">
+            </span>
+          </label>
 
-            <label class="field-text">
-              <span class="field-text__name">Отчество:</span>
-              <span class="field-text__input-wrap">
-                <input class="field-text__input" type="text" name="text" placeholder="Отчество, если желаете">
-              </span>
-            </label>
-          </fieldset>
+          <label class="field-text">
+            <span class="field-text__name">Отчество:</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="text" placeholder="Отчество, если желаете">
+            </span>
+          </label>
+        </fieldset>
 
         <div class="form__fieldset-wrap">
           <fieldset class="form__fieldset  form__fieldset--first">

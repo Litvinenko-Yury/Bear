@@ -1,5 +1,11 @@
 .page-header {
-  background: #b266b2;
+  @media (min-width: $tablet-width) {
+    margin-bottom: -75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow-x: hidden;
+  }
 }
 
 .page-header__wrap {
