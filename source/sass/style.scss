@@ -2,7 +2,7 @@
 @import "variables.scss";
 //===
 @import "blocks/global.scss";
-//@import "blocks/mixins.scss";
+@import "blocks/mixins.scss";
 //===
 // импорт остальных блоков
 @import "blocks/about.scss";

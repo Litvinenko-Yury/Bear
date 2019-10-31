@@ -1,0 +1,11 @@
+@mixin h2-fontsize-lineheight {
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h2 + 18px;
+    line-height: 1.1628em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-h2 + 28px;
+    line-height: 1.0755em;
+  }
+}

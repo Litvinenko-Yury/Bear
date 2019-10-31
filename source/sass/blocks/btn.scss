@@ -9,7 +9,7 @@
   user-select: none;
   font-family: inherit;
   font-size: $font-size--larger;
-  line-height: $line-height;
+  line-height: 1.1765em;
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
@@ -19,22 +19,17 @@
   color: $text-color;
   background-color: transparent;
   background-image: none;
-  //border-radius: $btn-border-radius-base;
   border: 2px solid $text-color;
   cursor: pointer;
 
-  &:hover {
-    text-decoration: none;
-    //color: $text-color;
-    //background-color: darken($gray--light, 10%);
-  }
-
+  &:hover,
   &:focus {
-    //color: $text-color;
-    //background-color: darken($gray--light, 10%);
+    text-decoration: none;
+    color: $btn-color--hover;
+    background-color: $btn-bg--hover;
   }
 
   &:active {
-    //color: $color-active;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

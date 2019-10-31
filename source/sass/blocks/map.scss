@@ -1,8 +1,22 @@
 .map {
   height: 457px;
   margin-bottom: 40px;
-
   background: #f5ead8;
+  background-image: url("../img/rastr/bg-map-mob@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/rastr/bg-map-mob@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/rastr/bg-map-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/rastr/bg-map-tab@2x.jpg");
+    }
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -10,5 +24,10 @@
     right: 0;
     width: 525px;
     margin-bottom: 0;
+    background-image: url("../img/rastr/bg-map-desk@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/rastr/bg-map-desk@2x.jpg");
+    }
   }
 }

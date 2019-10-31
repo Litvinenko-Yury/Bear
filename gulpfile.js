@@ -59,12 +59,12 @@ gulp.task("css", function () {
 
 //собрать svg-спрайт (gulp-svgstore), переименовать спрайт в "svg_sprite.svg" (gulp-rename), и сохранить в build/img.
 gulp.task("svg_sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/vector/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("svg_sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/vector"));
 });
 
 //инклюдим svg-спрайт в разметку html-файла
@@ -102,7 +102,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("svg_sprite", "html", "refresh"));
+  gulp.watch("source/img/vector/icon-*.svg", gulp.series("svg_sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("minify_js", "refresh"));
 });
@@ -126,7 +126,7 @@ gulp.task("build", gulp.series(
 gulp.task("start", gulp.series("build", "server"));
 
 //----------------------------------------------------------------
-//оптимизируем PNG-JPEG-SVG (gulp-imagemin)
+//!!!!!!!!!!!-error-!!!!!!оптимизируем PNG-JPEG-SVG (gulp-imagemin)
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -140,14 +140,12 @@ gulp.task("images", function () {
 //конвертируем jpg в webp (gulp-webp)
 gulp.task("webp", function () {
   return gulp.src([
-    "source/img/**/*.{png,jpg}",
-    "!source/img/bg-*.jpg" //bg-*.jpg не конвертировать в webp
+    "source/img/rastr/**/*.{png,jpg}",
+    "!source/img/rastr/bg-*.jpg" //bg-*.jpg не конвертировать в webp
   ])
     .pipe(webp({ quality: 75 }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/img/rastr"));
 });
-
-
 
 //задача публикации на gh-pages
 function deploy(cb) {

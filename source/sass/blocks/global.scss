@@ -37,6 +37,7 @@ body {
   font-weight: normal;
   line-height: $line-height;
   color: $text-color;
+  background-color: #ffffff;
 }
 
 img {
@@ -57,12 +58,14 @@ h1 {
   font-size: $font-size-h1;
   font-weight: 700;
   line-height: $line-height--h1;
+  color: #000000;
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: 700;
   line-height: $line-height--h2;
+  color: #000000;
 }
 
 h3 {

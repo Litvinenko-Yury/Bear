@@ -38,6 +38,8 @@ $color-main--dark: #56c3b2;
 $color-main--darken: #149080;
 //$color-main--darkest: ;
 
+$color-main--hover: #59d5bc;
+
 //$color-second--lightest: ;
 //$color-second--lighten: ;
 //$color-second--light: ;
@@ -48,7 +50,7 @@ $color-main--darken: #149080;
 
 // $gray--lightest: ;
 //$gray--lighten: ;
-//$gray--light: ;
+$gray--light: #f9f9f9; //249
 $gray-base: #f1f1f1; //241
 $gray--dark: #e5e5e5; //230
 $gray--darken: #d3d2d2; //210
@@ -77,6 +79,15 @@ $content-width--desk: 1050px;
 //$link-color--active: ; //активная ссылка
 //$link-color--down: ; //клик на ссылку
 
+$link-bg: #63d1bb;
+$link-bg--hover: #59d5bc;
+//$link-bg--focus: ;
+//$link-bg--active: ; //активная ссылка
+//$link-bg--down: ; //клик на ссылку
+
+$link-bg-2: #56c3b2;
+$link-bg-2--hover: #46c1ae;
+
 //=============================
 //===Buttons===
 //=============================
@@ -93,13 +104,13 @@ $btn-padding-horizontal: 20px;
 //$btn-font-wight: ;
 
 // $btn-color: ;
-// $btn-color-hover: ;
+$btn-color--hover: #ffffff;
 // $btn-color-active: ;
 
 //$btn-border: ;
 
 //$btn-bg: ;
-//$btn-bg-hover: ;
+$btn-bg--hover: #444444;
 //$btn-bg-active: ;
 
 //$btn-border-radius-base: ;

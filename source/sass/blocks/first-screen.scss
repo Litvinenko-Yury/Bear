@@ -1,39 +1,68 @@
 .first-screen {
+  position: relative;
   min-height: 350px;
   padding-top: 76px;
-  background-color: gray;
-  background-image: url("../img/rastr/bg-desert@1x.jpg");
-  background-size: cover;
+  background-color: $gray--light;
+  background-image: url("../img/rastr/bg-first-screen-mob@1x.jpg");
+  background-size: contain;
   background-position: center top;
+  background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/rastr/bg-desert@2x.jpg");
+    background-image: url("../img/rastr/bg-first-screen-mob@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 760px;
+    min-height: 700px;
     padding-top: 160px;
+    background-image: url("../img/rastr/bg-first-screen-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/rastr/bg-first-screen-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 746px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: contain;
+    background-repeat: repeat-x;
+
+    @media (min-width: $tablet-width) {
+      height: 23px;
+      background-image: url("../img/vector/icon-wave-tab.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 34px;
+    }
   }
 }
 
 .first-screen__title {
   width: 250px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    margin-bottom: 370px;
+    width: 550px;
+    margin-bottom: 0;
+    font-size: $font-size-h1 + 20px;
+    line-height: 1.064em;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
-    margin-bottom: 354px;
+    width: 650px;
+    font-size: $font-size-h1 + 26px;
+    line-height: 1.075em;
   }
 }
 
@@ -42,8 +71,12 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-
+    width: 100%;
     padding-right: 52px;
     padding-left: 52px;
   }
@@ -58,7 +91,7 @@
 
 .first-screen__list-item {
   outline: 1px dotted coral;
-  display: flex;
+  display: flex; //что-бы обе ссылки были одинаковые по высоте при заполнении текстом.
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -75,9 +108,50 @@
   width: 100%;
   padding: 20px 27px 20px 30px;
 
-  background: green;
+  @media (min-width: $tablet-width) {
+    padding: 35px;
+  }
+
+  &--1 {
+    background-color: $link-bg;
+
+    &:hover,
+    &:focus {
+      background-color: darken($link-bg, 5%);
+    }
+
+    &:active .first-screen__link-text {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--2 {
+    background-color: $link-bg-2;
+
+    &:hover,
+    &:focus {
+      background-color: darken($link-bg-2, 5%);
+    }
+
+    &:active .first-screen__link-text {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.first-screen__link-text {
+  padding-right: 15px;
+  font-size: $font-size--large + 1px;
+  font-weight: 700;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+    line-height: 1.5em;
+  }
 }
 
 .first-screen__link-svg {
+  flex-shrink: 0;
   background: coral;
 }

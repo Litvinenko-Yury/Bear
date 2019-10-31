@@ -1,11 +1,11 @@
 .product {
+  position: relative;
   margin-bottom: 75px;
   padding: 35px 30px 0 30px;
-  background: #cabe83;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 125px;
-    padding-bottom: 0;
+    padding: 35px 50px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,6 +14,26 @@
     margin: 0 auto;
     margin-bottom: 165px;
     padding: 35px 0 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/vector/icon-wave-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      bottom: -52px;
+    }
+
+    @media (min-width: $tablet-width) {
+      bottom: -72px;
+    }
   }
 }
 
@@ -26,20 +46,32 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 55px;
+    padding-right: 25px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    z-index: 2;
   }
 }
 
 .product__title {
+  @media (min-width: $tablet-width) {
+    @include h2-fontsize-lineheight;
+  }
+
   @media (min-width: $desktop-width) {
+    @include h2-fontsize-lineheight;
     margin-left: 175px;
   }
 }
 
 .product__subtitle {
+  font-size: $font-size--larger;
+  font-weight: 700;
+  line-height: 1em;
+  color: $color-main;
+
   @media (min-width: $tablet-width) {
     text-align: center;
   }
@@ -83,26 +115,38 @@
 
 .product__descr {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--larger;
+    line-height: 1.765em;
+  }
 }
 
-.product__list {
+.product__table {
   width: 100%;
   margin-bottom: 28px;
+  line-height: 1.333em;
+  border-collapse: collapse;
 }
 
 .product__list-key {
-  border: 1px solid gray;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid darken($gray-base, 2%);
 }
 
 .product__list-value {
-  border: 1px solid gray;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid darken($gray-base, 2%);
 }
 
 .product__img {
   display: block;
   margin-bottom: 30px;
+  background: $gray-base;
   height: 315px;
-  object-fit: cover;
+  object-fit: contain;
   image-rendering: crisp-edges;
 
   @media (min-width: $tablet-width) {
@@ -117,5 +161,11 @@
 
 .product__price {
   margin-bottom: 30px;
+  font-size: $font-size--larger;
+  font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+  }
 }
