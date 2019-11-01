@@ -97,6 +97,21 @@
     background: rgba(0, 0, 0, 0.7);
 
     margin: auto;
+    $width: 101px; // переменная, чтобы можно было увеличить ширину на 20%
+    $height: 77px; // переменная, чтобы можно было увеличить ширину на 20%
+
+    &:hover,
+    &:focus {
+      width: $width * 1.2;
+      height: $height *1.2;
+      transition: 0.15s;
+    }
+
+    &:active {
+      width: $width * 0.8;
+      height: $height *0.8;
+      transition: 0s;
+    }
   }
 }
 
