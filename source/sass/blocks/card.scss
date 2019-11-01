@@ -1,5 +1,5 @@
 .card {
-  background: #85af70;
+  //background: #85af70;
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    //height: 334px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +25,7 @@
     width: 50%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -36,26 +37,25 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    min-height: 334px;
+    height: 334px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     height: 462px;
   }
 }
 
 .card__body {
-  background: pink;
+  //background: pink;
 
   padding: 30px;
   padding-bottom: 10px;
-  border: 1px solid red;
+  border: 1px solid $gray-base;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 50%;
   }
 
@@ -63,29 +63,52 @@
     flex-grow: 2;
     width: 100%;
   }
+
+  @include box-shadow-card;
 }
 
 .card__title-link {
+  outline: 1px dotted red;
+
+  display: inline-block;
+  color: #000000;
   cursor: pointer;
 }
 
 .card__title {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include h3-fontsize-lineheight;
+  }
 }
 
 .card__descr {
   margin-bottom: 25px;
+  font-size: $font-size--smaller;
+  line-height: $line-height-auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size;
+  }
 }
 
 .card__footer {
-  outline: 1px dotted darkviolet;
-  background: yellow;
+  //outline: 1px dotted darkviolet;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid red;
+  border-top: 1px solid $gray-base;
+}
+
+.card__price {
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--larger;
+  }
 }
 
 .card__buy {

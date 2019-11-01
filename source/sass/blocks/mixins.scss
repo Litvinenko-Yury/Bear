@@ -9,3 +9,45 @@
     line-height: 1.0755em;
   }
 }
+
+@mixin h3-fontsize-lineheight {
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h3 + 3px;
+    line-height: $line-height-auto;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+@mixin wave {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/vector/icon-wave.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 34px;
+    }
+  }
+}
+
+@mixin box-shadow-card {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}

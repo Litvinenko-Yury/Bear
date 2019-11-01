@@ -1,5 +1,5 @@
 .video {
-  background: #a64ca6;
+  //background: #a64ca6;
 
   position: relative;
   margin-bottom: 60px;
@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +21,8 @@
     margin-bottom: 105px;
     padding-right: 0;
     padding-left: 0;
+
+    @include box-shadow-card;
   }
 }
 
@@ -26,9 +30,9 @@
   display: flex;
   align-items: center;
   padding: 25px 40px 25px 30px;
-  border-top: 1px solid red;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
+  border-top: 1px solid $gray-base;
+  border-right: 1px solid $gray-base;
+  border-left: 1px solid $gray-base;
 
   @media (min-width: $tablet-width) {
     padding: 40px 40px 0 40px;
@@ -36,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 365px;
+    width: 370px;
     padding: 45px 60px 0 80px;
   }
 
@@ -49,11 +53,18 @@
 }
 
 .video__title {
-  border: 1px solid coral;
+  border: 1px dotted coral;
+
+  @media (min-width: $tablet-width) {
+    @include h3-fontsize-lineheight;
+  }
 }
 
-.video__img-wrap {
+.video__wrap {
+  outline: 1px solid red;
+
   position: relative;
+  background-color: $gray-base;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -69,7 +80,7 @@
 }
 
 .video__btn {
-  outline: 1px dotted yellow;
+  outline: 2px dotted red;
 
   position: absolute;
   width: auto;
@@ -83,42 +94,39 @@
   cursor: pointer;
 
   & > svg {
-    background: #000000;
+    background: rgba(0, 0, 0, 0.7);
 
     margin: auto;
   }
 }
 
-.video__img {
-  display: block;
-  height: auto;
-  object-fit: cover;
-
-  @media (min-width: $desktop-width) {
-    height: 100%;
-  }
-}
-
 .video__body {
-  background: pink;
+  //background: pink;
 
   padding: 30px;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-left: 1px solid red;
+  border-right: 1px solid $gray-base;
+  border-bottom: 1px solid $gray-base;
+  border-left: 1px solid $gray-base;
 
   @media (min-width: $tablet-width) {
     padding: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 365px;
+    width: 370px;
     padding: 45px 60px 60px 80px;
+    border-left: none;
   }
 }
 
 .video__descr {
   margin-bottom: 25px;
+  font-size: $font-size--smaller;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size;
+    line-height: 2em;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;

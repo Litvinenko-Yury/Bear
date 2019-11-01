@@ -1,10 +1,21 @@
 .title {
   padding: 74px 30px;
   text-align: center;
-  background-color: #cccccc;
+  background-color: $gray-base;
+
+  @media (min-width: $tablet-width) {
+    @include h2-fontsize-lineheight;
+
+    position: relative;
+    margin-bottom: 75px;
+  }
 
   @media (min-width: $desktop-width) {
+    @include h2-fontsize-lineheight;
+
     padding-right: 225px;
     padding-left: 225px;
   }
+
+  @include wave;
 }
