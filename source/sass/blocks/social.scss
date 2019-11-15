@@ -10,6 +10,8 @@
   border-bottom: 1px solid $gray--dark;
 
   @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    margin-right: -80px;
     padding: 0;
     border-bottom: none;
   }
@@ -19,7 +21,7 @@
   outline: 1px dotted blue;
 
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 27px;
   }
 }
 
@@ -39,7 +41,7 @@
 
 .social svg {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   fill: #000000;
 }

@@ -3,13 +3,13 @@
 
   position: relative;
   min-height: 200px;
-  margin-bottom: 90px;
+  margin-bottom: 85px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 150px;
-    padding: 80px 80px 45px 50px;
+    margin-bottom: 147px;
+    padding: 77px 80px 50px 50px;
     background-image: url("../img/rastr/bg-reviws-tab@1x.jpg");
     background-size: 45.57% 100%;
     background-position: left center;
@@ -30,7 +30,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -36px;
+    bottom: -50px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -39,10 +39,11 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      bottom: -52px;
+      bottom: -85px;
+      height: 17px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       bottom: -72px;
     }
   }
@@ -50,9 +51,11 @@
 
 .reviews__title {
   width: 270px;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+
     @include h2-fontsize-lineheight;
   }
 
@@ -62,7 +65,7 @@
 }
 
 .reviews__blockquote {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -70,17 +73,19 @@
 }
 
 .reviews__info {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 2em;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     font-size: $font-size--larger;
     line-height: 1.7647em;
   }
 }
 
 .reviews__autor-name {
+  display: block;
+  margin-bottom: 5px;
   font-size: $font-size--larger;
   color: #000000;
 
@@ -101,19 +106,19 @@
 
 .reviews__btn-wrap {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 62px;
-    right: 71px;
+    bottom: 45px;
+    right: 45px;
     margin-bottom: 0;
   }
 }
 
 .reviews__btn-slider {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   border: 1px solid $gray-base;
   outline: none;
 
@@ -134,7 +139,6 @@
 }
 
 .reviews__btn-svg {
-  background: coral;
   fill: #000000;
 }
 
@@ -144,6 +148,7 @@
     top: 80px;
     right: 52px;
     width: auto;
-    padding: 20px 40px;
+    padding-right: 37px;
+    padding-left: 37px;
   }
 }

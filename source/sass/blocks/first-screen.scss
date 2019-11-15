@@ -1,7 +1,7 @@
 .first-screen {
   position: relative;
   min-height: 350px;
-  padding-top: 76px;
+  padding-top: 70px;
   background-color: $gray--light;
   background-image: url("../img/rastr/bg-first-screen-mob@1x.jpg");
   background-size: contain;
@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 700px;
-    padding-top: 160px;
+    min-height: 755px;
+    padding-top: 155px;
     background-image: url("../img/rastr/bg-first-screen-tab@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -30,9 +30,9 @@
 }
 
 .first-screen__title {
-  width: 250px;
+  width: 270px;
   margin: 0 auto;
-  margin-bottom: 140px;
+  margin-bottom: 125px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -40,6 +40,7 @@
     margin-bottom: 0;
     font-size: $font-size-h1 + 20px;
     line-height: 1.064em;
+    letter-spacing: -2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,10 +90,12 @@
   align-items: center;
 
   width: 100%;
-  padding: 20px 27px 20px 30px;
+  padding: 20px 27px 22px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 35px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   &--1 {

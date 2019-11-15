@@ -2,6 +2,11 @@
   outline: 1px dotted red;
 
   position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     width: $content-width--desk;
@@ -16,7 +21,7 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      top: 0;
+      top: -15px;
       right: 55px;
       width: 47px;
       height: 81px;
@@ -34,7 +39,7 @@
 }
 
 .contact__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
   font-size: $font-size--large;
@@ -42,6 +47,7 @@
 
   @media (min-width: $tablet-width) {
     @include h2-fontsize-lineheight;
+    margin-bottom: 48px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -55,6 +61,7 @@
 .contact__list {
   margin: 0;
   padding-right: 30px;
+  padding-bottom: 38px;
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
@@ -63,6 +70,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-right: 50px;
+    padding-bottom: 55px;
     padding-left: 50px;
   }
 
@@ -75,20 +83,25 @@
   outline: 1px dotted coral;
 
   display: flex;
-  margin-bottom: 40px;
   list-style: none;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 330px;
+    width: 332px;
   }
 }
 
 .contact__name {
-  margin-right: 20px;
+  margin-right: 30px;
+  line-height: 1.95em;
 
   @media (min-width: $tablet-width) {
+    margin-right: 25px;
     font-size: $font-size--larger;
-    line-height: 1.765em;
+    line-height: 1.8em;
   }
 }
 
@@ -130,7 +143,6 @@
 }
 
 .contact__btn-wrap {
-  margin-bottom: 40px;
   padding-right: 30px;
   padding-left: 30px;
 

@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
     background-image: url("../img/rastr/bg-map-tab@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

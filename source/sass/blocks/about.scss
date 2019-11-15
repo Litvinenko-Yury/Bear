@@ -1,5 +1,5 @@
 .about {
-  padding: 0 30px 60px 30px;
+  padding: 0 30px 55px 30px;
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;
@@ -20,6 +20,8 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+
     @include h2-fontsize-lineheight;
   }
 
@@ -44,19 +46,24 @@
   list-style: none;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
   }
 }
 
 .about__list-item-svg {
-  background: coral;
-
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   fill: $color-main;
 }
 
 .about__list-item-text {
+  display: inline-block;
   font-size: $font-size--larger;
   line-height: 1.1765em;
   font-weight: 700;
