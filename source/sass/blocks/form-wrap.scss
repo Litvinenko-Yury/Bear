@@ -1,5 +1,5 @@
 .form-wrap {
-  background: #83d6b4;
+  //background: #cccccc;
 
   padding: 30px 30px 55px 30px;
 
@@ -13,10 +13,14 @@
 .form-wrap__paragraph {
   margin-bottom: 30px;
 
+  font-size: $font-size--smaller;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-right: 50px;
     padding-left: 50px;
+    font-size: $font-size--larger;
+    line-height: 1.76em;
   }
 
   @media (min-width: $desktop-width) {

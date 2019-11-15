@@ -1,6 +1,6 @@
 .field-text {
   @media (min-width: $tablet-width) {
-    outline: 3px dotted blue;
+    outline: 1px dotted blue;
 
     display: flex;
     align-items: center;
@@ -20,16 +20,55 @@
 
 .field-text__name {
   display: block;
+  font-size: $font-size--larger;
+  line-height: 1em;
   font-weight: 700;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     margin-right: 25px;
+    font-size: $font-size--large + 1px;
+    font-weight: 700;
   }
 }
 
 .field-text__input-wrap {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  &--tel::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    background-color: #000000;
+    //background-image: url("../img/icon-tel.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--mail::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    background-color: #000000;
+    //background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -37,12 +76,45 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #ffb3a6;
+  font-size: $font-size--larger;
+  line-height: 1em;
+  color: $text-color;
+  //background-color: #ffb3a6;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--large + 1px;
+  }
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border-bottom: 2px solid $color-main;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $color-main;
+    outline: none;
+  }
+
+  &--icon {
+    padding-right: 40px;
+  }
 
   &--textarea {
     display: block;
-    border: 2px solid red;
+    padding: 17px;
+    border: 2px solid $text-color;
+
+    &:hover {
+      border-color: $color-main;
+    }
+
+    &:focus {
+      border-color: $color-main;
+    }
   }
 }

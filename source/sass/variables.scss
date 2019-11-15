@@ -54,7 +54,7 @@ $gray--light: #f9f9f9; //249
 $gray-base: #f1f1f1; //241
 $gray--dark: #e5e5e5; //230
 $gray--darken: #d3d2d2; //210
-//$gray--darker: ;
+$gray--darker: #c7c7c7; //199
 //$gray--darkenest: ;
 //$gray--darkest: ;
 
@@ -138,8 +138,8 @@ $desktop-width: 1150px;
 //=============================
 //===Retina queries breakpoints===
 //=============================
-// $retina-dpi: 144dpi;
-// $retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 //=============================
 //===Animate===

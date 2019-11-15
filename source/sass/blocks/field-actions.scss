@@ -18,8 +18,15 @@
 }
 
 .field-actions__help-text {
+  display: block;
+  margin-bottom: 30px;
+  font-size: $font-size - 1px;
+  line-height: $line-height-auto;
+
   @media (min-width: $tablet-width) {
     order: 2;
+    font-size: $font-size--larger;
+    line-height: $line-height;
   }
 }
 

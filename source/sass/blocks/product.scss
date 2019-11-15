@@ -147,6 +147,7 @@
   background: $gray-base;
   height: 315px;
   object-fit: contain;
+  font-family: "object-fit: contain;"; /* stylelint-disable-line */
   image-rendering: crisp-edges;
 
   @media (min-width: $tablet-width) {

@@ -46,21 +46,23 @@
   content: "";
   width: 40px;
   height: 40px;
-  border: 2px solid red;
-  border-radius: 20px;
-  background: transparent;
 
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
+
+  border: 2px solid $text-color;
+  border-radius: 20px;
+  background: transparent;
 }
 
 .field-radio__name-text:hover::before {
-  border-color: coral;
+  border-color: $color-main;
 }
 
 .field-radio__name-text:active::before {
-  border-color: yellow;
+  border-color: $gray--darker;
 }
 
 /*переключение состояния radio*/
@@ -70,13 +72,27 @@
   width: 16px;
   height: 16px;
   border-radius: 8px;
-  background-color: green;
+  background-color: $color-main;
   position: absolute;
-  top: 11px;
-  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
 }
 
 /*делаем radio доступным с клавиатуры*/
 .field-radio__input:focus ~ .field-radio__name-text::before {
-  border-color: coral;
+  border-color: $color-main;
+}
+
+/*==================*/
+
+.field-radio__name-text {
+  font-size: $font-size--larger;
+  line-height: 1em;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--large + 1px;
+    font-weight: 700;
+  }
 }

@@ -63,24 +63,22 @@
   content: "";
   width: 40px;
   height: 40px;
-  border: 2px solid red;
-  background: transparent;
 
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
-}
 
-.field-checkbox__name-text {
-  line-height: 1em;
+  border: 2px solid $text-color;
+  background: transparent;
 }
 
 .field-checkbox__name-text:hover::before {
-  border-color: coral;
+  border-color: $color-main;
 }
 
 .field-checkbox__name-text:active::before {
-  border-color: yellow;
+  border-color: $gray--darker;
 }
 
 /*переключение состояния чек-бокса*/
@@ -89,14 +87,30 @@
   content: "";
   width: 22px;
   height: 16px;
-  //background: url("../img/icon-yes-pink.svg") no-repeat center;
 
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9px;
+
+  background: url("../img/vector/icon-tick.svg") no-repeat center;
+  background-size: contain;
 }
 
 /*делаем чек-бокс доступным с клавиатуры*/
 .field-checkbox__input:focus ~ .field-checkbox__name-text::before {
-  border-color: coral;
+  border-color: $color-main;
+}
+
+/*==================*/
+
+.field-checkbox__name-text {
+  font-size: $font-size--larger;
+  line-height: 1em;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--large + 1px;
+    font-weight: 700;
+  }
 }
