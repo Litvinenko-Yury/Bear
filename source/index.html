@@ -16,9 +16,9 @@
 </head>
 
 <body>
-  <!--  <div style="display: none;">
-    <include src="build/img/svg_sprite.svg"></include>
-  </div> -->
+  <div style="display: none;">
+    <include src="build/img/vector/svg_sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <div class="page-header__wrap">
@@ -28,12 +28,16 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--1">
-            <a class="main-nav__link  main-nav__link--logo-header">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/vector/logo-michelin.svg">
-                <source media="(min-width: 768px)" srcset="img/vector/logo-michelin.svg">
-                <img class="main-nav__logo" width="86" height="35" src="img/vector/logo-michelin.svg" alt="Логотип магазина Мишка.">
-              </picture>
+            <a class="logo main-nav__link  main-nav__link--logo-header" aria-label="переход на главную страницу">
+              <svg class="main-nav__logo  main-nav__logo--desk" width="149" height="72" role="img">
+                <use xlink:href="#icon-logo-desktop" />
+              </svg>
+              <svg class="main-nav__logo  main-nav__logo--tab" width="113" height="46" role="img">
+                <use xlink:href="#icon-logo-tablet" />
+              </svg>
+              <svg class="main-nav__logo  main-nav__logo--mob" width="86" height="35" role="img">
+                <use xlink:href="#icon-logo-mobile" />
+              </svg>
             </a>
           </li>
 
@@ -49,7 +53,7 @@
             <a class="main-nav__link  main-nav__link--4" href="#!">
               <svg class="main-nav__link-icon  main-nav__link-icon--search" width="18" height="18" role="img">
                 <title>Иконка поиска</title>
-                <use xlink:href="#icon-card" />
+                <use xlink:href="#icon-search" />
               </svg>
               <span class="main-nav__link-text  main-nav__link-text--visually-hidden">Поиск по сайту</span>
             </a>
@@ -59,7 +63,7 @@
             <a class="main-nav__link  main-nav__link--5" href="#!">
               <svg class="main-nav__link-icon" width="18" height="18" role="img">
                 <title>Иконка поиска</title>
-                <use xlink:href="#icon-card" />
+                <use xlink:href="#icon-cart" />
               </svg>
               <span class="main-nav__link-text">Корзина: пока пуста</span>
             </a>
@@ -90,7 +94,7 @@
           <a href="#!" class="first-screen__link  first-screen__link--1">
             <span class="first-screen__link-text">Предметы<br> интерьера</span>
             <svg class="first-screen__link-svg" width="60" height="60">
-              <use xlink:href="#icon-cart" />
+              <use xlink:href="#icon-interior" />
             </svg>
           </a>
         </li>
@@ -98,7 +102,7 @@
           <a href="#!" class="first-screen__link  first-screen__link--2">
             <span class="first-screen__link-text">Детские<br> игрушки</span>
             <svg class="first-screen__link-svg" width="60" height="60">
-              <use xlink:href="#icon-cart" />
+              <use xlink:href="#icon-toy" />
             </svg>
           </a>
         </li>
@@ -152,37 +156,37 @@
       <ul class="about__list">
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-1"></use>
           </svg>
           <span class="about__list-item-text">Экологически чистые материалы</span>
         </li>
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-2"></use>
           </svg>
           <span class="about__list-item-text">Скандинавский стиль по российской цене</span>
         </li>
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-3"></use>
           </svg>
           <span class="about__list-item-text">Увеличивает лайки на фотографиях</span>
         </li>
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-4"></use>
           </svg>
           <span class="about__list-item-text">Связано вручную с любовью и умилением</span>
         </li>
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-5"></use>
           </svg>
           <span class="about__list-item-text">Поддержка отечественного производителя</span>
         </li>
         <li class="about__list-item">
           <svg class="about__list-item-svg" width="40" height="40" aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-html5"></use>
+            <use xlink:href="#icon-feature-6"></use>
           </svg>
           <span class="about__list-item-text">Поставляется в подарочной упаковке</span>
         </li>
@@ -203,12 +207,12 @@
       <div class="reviews__btn-wrap">
         <button class="btn  reviews__btn-slider" aria-label="Предыдущий слайд">
           <svg class="reviews__btn-svg" width="50" height="26" role="img">
-            <use xlink:href="#icon-cart" />
+            <use xlink:href="#icon-arrow-left" />
           </svg>
         </button>
         <button class="btn  reviews__btn-slider" aria-label="Следующий слайд">
           <svg class="reviews__btn-svg" width="50" height="26" role="img">
-            <use xlink:href="#icon-cart" />
+            <use xlink:href="#icon-arrow-right" />
           </svg>
         </button>
       </div>
@@ -239,14 +243,13 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
-      <a class="logo" href="#!" aria-label="Переход на главную страницу">
+      <a class="logo  page-footer__logo" href="#!" aria-label="Переход на главную страницу">
         <svg width="102" height="34" role="img">
-          <use xlink:href="#icon-cart"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
 
       <ul class="social">
-
         <li class="social__link-wrap" title="instagram">
           <a class="social__link" href="https://www.instagram.com/" rel="noopener" aria-label="Переход на сайт instagram">
             <svg width="16" height="16" role="img">
@@ -257,14 +260,14 @@
         <li class="social__link-wrap" title="facebook">
           <a class="social__link" href="https://www.facebook.com/" rel="noopener" aria-label="Переход на сайт facebook">
             <svg width="16" height="16" role="img">
-              <use xlink:href="#icon-fb-mobile" />
+              <use xlink:href="#icon-fb" />
             </svg>
           </a>
         </li>
         <li class="social__link-wrap" title="twitter">
           <a class="social__link" href="https://twitter.com" rel="noopener" aria-label="Переход на сайт twitter">
             <svg width="32" height="32" role="img">
-              <use xlink:href="#icon-cart" />
+              <use xlink:href="#icon-twitter" />
             </svg>
           </a>
         </li>
@@ -273,7 +276,7 @@
       <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" aria-label="Переход на сайт HTML-Academy">
         <span class="copyright-link__text">Разработано</span>
         <svg class="copyright-link__logo" width="27" height="34" role="img">
-          <use xlink:href="#icon-htmlacademy" />
+          <use xlink:href="#icon-logo-htmlacademy" />
         </svg>
       </a>
     </div>

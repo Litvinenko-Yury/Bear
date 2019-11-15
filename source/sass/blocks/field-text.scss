@@ -39,36 +39,17 @@
     width: 100%;
   }
 
-  &--tel::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-
-    background-color: #000000;
-    //background-image: url("../img/icon-tel.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  &:hover .field-text__input,
+  &:focus .field-text__input,
+  &:active .field-text__input {
+    border-bottom: 2px solid $color-main;
+    outline: none;
   }
 
-  &--mail::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-
-    background-color: #000000;
-    //background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  &:hover .field-text__icon,
+  &:focus .field-text__icon,
+  &:active .field-text__icon {
+    fill: $color-main;
   }
 }
 
@@ -79,9 +60,9 @@
   font-size: $font-size--larger;
   line-height: 1em;
   color: $text-color;
-  //background-color: #ffb3a6;
   border: none;
   border-bottom: 2px solid #000000;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size--large + 1px;
@@ -89,15 +70,6 @@
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
-  }
-
-  &:hover {
-    border-bottom: 2px solid $color-main;
-  }
-
-  &:focus {
-    border-bottom: 2px solid $color-main;
-    outline: none;
   }
 
   &--icon {
@@ -117,4 +89,15 @@
       border-color: $color-main;
     }
   }
+}
+
+.field-text__icon {
+  background: coral;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: $gray--darken;
 }

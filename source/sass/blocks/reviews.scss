@@ -115,16 +115,27 @@
   padding-top: 13px;
   padding-bottom: 13px;
   border: 1px solid $gray-base;
+  outline: none;
 
   &:hover,
   &:focus,
   &:active {
     background-color: transparent;
   }
+
+  &:hover .reviews__btn-svg,
+  &:focus .reviews__btn-svg {
+    fill: $gray--darkenest;
+  }
+
+  &:active .reviews__btn-svg {
+    fill: $gray--darkest;
+  }
 }
 
 .reviews__btn-svg {
-  background: #000000;
+  background: coral;
+  fill: #000000;
 }
 
 .reviews__btn-link {

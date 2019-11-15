@@ -20,5 +20,14 @@
 }
 
 .copyright-link__logo {
-  background: #000000;
+  fill: $color-main;
+
+  &:hover,
+  &:focus {
+    fill: $link-color--hover;
+  }
+
+  &:active {
+    fill: $link-color--down;
+  }
 }

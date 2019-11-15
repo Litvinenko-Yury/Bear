@@ -45,7 +45,7 @@
   }
 
   & > svg {
-    background: #000000;
+    background: coral;
 
     flex-shrink: 0;
     margin-right: 25px;
@@ -80,7 +80,7 @@
 }
 
 .video__btn {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 
   position: absolute;
   width: auto;
@@ -94,8 +94,6 @@
   cursor: pointer;
 
   & > svg {
-    background: rgba(0, 0, 0, 0.7);
-
     margin: auto;
     $width: 101px; // переменная, чтобы можно было увеличить ширину на 20%
     $height: 77px; // переменная, чтобы можно было увеличить ширину на 20%
@@ -103,13 +101,13 @@
     &:hover,
     &:focus {
       width: $width * 1.2;
-      height: $height *1.2;
+      height: $height * 1.2;
       transition: 0.15s;
     }
 
     &:active {
       width: $width * 0.8;
-      height: $height *0.8;
+      height: $height * 0.8;
       transition: 0s;
     }
   }

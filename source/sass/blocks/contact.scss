@@ -113,11 +113,11 @@
 
   &:hover,
   &:focus {
-    color: $link-bg-2--hover;
+    color: $link-color--hover;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    color: $link-color--down;
   }
 
   &:hover::after {
@@ -125,7 +125,7 @@
   }
 
   &:active::after {
-    color: rgba(70, 193, 174, 0.3);
+    color: $link-color--down;
   }
 }
 

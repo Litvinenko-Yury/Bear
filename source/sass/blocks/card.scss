@@ -121,7 +121,17 @@
   border: none;
 
   & > svg {
-    background: #000000;
+    background: coral;
     margin: auto;
+    fill: $gray--darken;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $link-color--hover;
+  }
+
+  &:active {
+    fill: $link-color--down;
   }
 }

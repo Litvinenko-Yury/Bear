@@ -1,5 +1,5 @@
 .social {
-  outline: 1px dotted red;
+  outline: 1px dotted green;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -7,7 +7,7 @@
   margin: 0;
   padding: 24px 0;
   list-style: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $gray--dark;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -16,7 +16,7 @@
 }
 
 .social__link-wrap {
-  background-color: coral;
+  outline: 1px dotted blue;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -26,12 +26,20 @@
 .social__link {
   display: block;
   padding: 5px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $link-bg-2--hover;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }
 
 .social svg {
   display: block;
   width: 16px;
   height: 16px;
-  fill: #ffffff;
-  background: #000000;
+  fill: #000000;
 }

@@ -49,10 +49,11 @@
 }
 
 .about__list-item-svg {
-  background: #000000;
+  background: coral;
 
   display: block;
   margin-bottom: 20px;
+  fill: $color-main;
 }
 
 .about__list-item-text {
