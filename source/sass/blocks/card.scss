@@ -1,13 +1,10 @@
 .card {
-  //background: #85af70;
-
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
-    //height: 334px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,8 +44,6 @@
 }
 
 .card__body {
-  //background: pink;
-
   padding: 30px;
   padding-bottom: 10px;
   border: 1px solid $gray-base;
@@ -93,8 +88,6 @@
 }
 
 .card__footer {
-  //outline: 1px dotted darkviolet;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -120,18 +113,23 @@
 
   border: none;
 
-  & > svg {
-    background: coral;
-    margin: auto;
-    fill: $gray--darken;
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
   }
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: $link-color--hover;
   }
 
-  &:active {
+  &:active svg {
     fill: $link-color--down;
+  }
+
+  & svg {
+    margin: auto;
+    fill: $gray--darken;
   }
 }

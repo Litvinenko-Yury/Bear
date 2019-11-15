@@ -89,10 +89,10 @@
 .field-radio__name-text {
   font-size: $font-size--larger;
   line-height: 1em;
+  font-weight: 700;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size--large + 1px;
-    font-weight: 700;
   }
 }
