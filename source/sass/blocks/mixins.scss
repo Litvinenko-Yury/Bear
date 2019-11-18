@@ -40,6 +40,26 @@
   }
 }
 
+// @mixin wave-line {
+//   &::after {
+//     @media (min-width: $tablet-width) {
+//       content: "";
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 23px;
+//       background-image: url("../img/vector/icon-wave.svg");
+//       background-size: contain;
+//       background-repeat: repeat-x;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       height: 34px;
+//     }
+//   }
+// }
+
 @mixin box-shadow-card {
   &:hover,
   &:focus {

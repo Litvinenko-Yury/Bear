@@ -12,8 +12,9 @@
     position: relative; //для задания высоты для .product__img
     width: $content-width--desk;
     margin: 0 auto;
-    margin-bottom: 165px;
-    padding: 35px 0 0 0;
+    margin-top: 50px;
+    margin-bottom: 153px;
+    padding: 55px 0 0 0;
   }
 
   &::after {
@@ -33,7 +34,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      bottom: -72px;
+      bottom: -95px;
+      height: 24px;
     }
   }
 }
@@ -79,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 37px;
+    left: 35px;
     width: 100px;
   }
 }
@@ -122,6 +124,10 @@
     line-height: 1.765em;
     margin-bottom: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .product__table {
@@ -132,6 +138,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
   }
 }
 

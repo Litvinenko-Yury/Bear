@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 746px;
+    min-height: 765px;
   }
 
   @include wave;
@@ -47,6 +47,7 @@
     width: 650px;
     font-size: $font-size-h1 + 26px;
     line-height: 1.075em;
+    letter-spacing: normal;
   }
 }
 
@@ -97,6 +98,12 @@
     padding-top: 30px;
     padding-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
 
   &--1 {
     background-color: $link-bg;

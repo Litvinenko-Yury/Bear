@@ -8,6 +8,10 @@
     justify-content: space-between;
     padding-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .main-nav__item {
@@ -72,6 +76,7 @@
 
     @media (min-width: $desktop-width) {
       order: 1;
+      margin-right: 30px;
       width: 234px;
       border-bottom: 1px solid $gray--dark;
     }
@@ -100,7 +105,7 @@
     @media (min-width: $desktop-width) {
       order: 4;
       position: relative;
-      width: 315px;
+      width: 265px;
 
       &::before {
         content: "";
@@ -152,6 +157,7 @@
     @media (min-width: $desktop-width) {
       order: 7;
       flex-grow: 2;
+      padding: 15px 0 25px 17px;
     }
   }
 }
@@ -225,8 +231,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 36px 17px 36px 0;
+      padding: 32px 20px 32px 0;
       font-size: $font-size--larger;
+      border-right: 1px solid $gray--dark;
     }
   }
 
@@ -236,7 +243,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 36px 17px 36px 35px;
+      padding: 32px 17px 32px 35px;
       font-size: $font-size--larger;
     }
   }
@@ -264,19 +271,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 36px 35px 36px 50px;
+      padding: 32px 0 32px 10px;
     }
   }
 
   &--6 {
     @media (min-width: $desktop-width) {
-      padding: 25px 17px 25px 0;
+      padding: 15px 17px 15px 0;
     }
   }
 
   &--7 {
     @media (min-width: $desktop-width) {
-      padding: 25px 17px 25px 35px;
+      padding: 15px 17px 15px 35px;
     }
   }
 }

@@ -1,17 +1,20 @@
 .about {
-  padding: 0 30px 55px 30px;
+  margin-bottom: 55px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     padding-right: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 0;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: $content-width--desk;
     margin: 0 auto;
+    margin-bottom: 60px;
     padding-right: 200px;
-    padding-bottom: 90px;
+    padding-bottom: 0;
     padding-left: 175px;
   }
 }
@@ -22,10 +25,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
 
-    @include h2-fontsize-lineheight;
-  }
-
-  @media (min-width: $tablet-width) {
     @include h2-fontsize-lineheight;
   }
 }
