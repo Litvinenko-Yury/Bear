@@ -1,5 +1,5 @@
 .title {
-  padding: 74px 30px;
+  padding: 70px 30px 76px 30px;
   text-align: center;
   background-color: $gray-base;
 
@@ -7,7 +7,9 @@
     @include h2-fontsize-lineheight;
 
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
+    padding-top: 95px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {

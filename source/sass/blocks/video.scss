@@ -1,14 +1,13 @@
 .video {
-  //background: #a64ca6;
-
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   padding-right: 30px;
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -29,13 +28,13 @@
 .video__title-wrap {
   display: flex;
   align-items: center;
-  padding: 25px 40px 25px 30px;
+  padding: 25px 30px 20px 30px;
   border-top: 1px solid $gray-base;
   border-right: 1px solid $gray-base;
   border-left: 1px solid $gray-base;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 40px 0 40px;
+    padding: 30px 40px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,10 +44,8 @@
   }
 
   & > svg {
-    background: coral;
-
     flex-shrink: 0;
-    margin-right: 25px;
+    margin-right: 15px;
   }
 }
 
@@ -64,10 +61,12 @@
   outline: 1px solid red;
 
   position: relative;
+  height: 150px;
   background-color: $gray-base;
 
   @media (min-width: $tablet-width) {
     order: -1;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,15 +113,13 @@
 }
 
 .video__body {
-  //background: pink;
-
   padding: 30px;
   border-right: 1px solid $gray-base;
   border-bottom: 1px solid $gray-base;
   border-left: 1px solid $gray-base;
 
   @media (min-width: $tablet-width) {
-    padding: 40px;
+    padding: 30px 40px 45px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,9 +131,11 @@
 
 .video__descr {
   margin-bottom: 25px;
+  padding-right: 10px;
   font-size: $font-size--smaller;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
     font-size: $font-size;
     line-height: 2em;
   }

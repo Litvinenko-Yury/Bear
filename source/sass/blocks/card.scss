@@ -5,6 +5,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -29,9 +33,10 @@
 
 .card__img {
   display: block;
-  height: auto;
+  height: 196px;
   object-fit: cover;
   font-family: "object-fit: cover;"; /* stylelint-disable-line */
+  object-position: top center;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -44,7 +49,7 @@
 }
 
 .card__body {
-  padding: 30px;
+  padding: 26px 30px;
   padding-bottom: 10px;
   border: 1px solid $gray-base;
 
@@ -70,7 +75,7 @@
 }
 
 .card__title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     @include h3-fontsize-lineheight;
@@ -78,7 +83,7 @@
 }
 
 .card__descr {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: $font-size--smaller;
   line-height: $line-height-auto;
 
@@ -109,7 +114,9 @@
   display: flex;
   width: auto;
   height: auto;
+  padding-top: 20px;
   padding-right: 0;
+  padding-bottom: 20px;
 
   border: none;
 
