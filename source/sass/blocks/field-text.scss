@@ -1,4 +1,10 @@
 .field-text {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+
   @media (min-width: $tablet-width) {
     outline: 1px dotted blue;
 
@@ -16,10 +22,19 @@
     padding-right: 175px;
     padding-left: 175px;
   }
+
+  &--tel {
+    margin-top: -20px;
+  }
+
+  &--mail {
+    margin-top: -20px;
+  }
 }
 
 .field-text__name {
   display: block;
+  margin-top: 5px;
   font-size: $font-size--larger;
   line-height: 1em;
   font-weight: 700;
@@ -56,7 +71,7 @@
 .field-text__input {
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   font-size: $font-size--larger;
   line-height: 1em;
   color: $text-color;
@@ -95,7 +110,7 @@
   background: coral;
 
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
 

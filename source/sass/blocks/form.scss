@@ -1,3 +1,7 @@
+.form {
+  margin-top: 25px;
+}
+
 .form__fieldset-wrap {
   @media (min-width: $tablet-width) {
     background: $gray-base;
@@ -53,10 +57,10 @@
 }
 
 .form__legend {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-right: 25px;
 
-  font-size: $font-size--x-large;
+  font-size: $font-size--larger;
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;

@@ -1,7 +1,7 @@
 .field-radio {
   outline: 1px dotted coral;
 
-  margin-top: 0;
+  margin-top: -10px;
   margin-bottom: 0;
   padding-left: 0;
 
@@ -16,7 +16,7 @@
 }
 
 .field-radio__input-wrap {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   list-style: none;
 
   &:last-child {
