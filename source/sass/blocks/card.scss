@@ -90,6 +90,10 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .card__footer {

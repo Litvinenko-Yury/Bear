@@ -1,13 +1,12 @@
 .video {
   position: relative;
-  margin-bottom: 55px;
   padding-right: 30px;
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-top: 55px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -17,7 +16,7 @@
 
     width: $content-width--desk;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-top: 60px;
     padding-right: 0;
     padding-left: 0;
 
@@ -46,6 +45,10 @@
   & > svg {
     flex-shrink: 0;
     margin-right: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: -5px;
+    }
   }
 }
 
@@ -54,6 +57,10 @@
 
   @media (min-width: $tablet-width) {
     @include h3-fontsize-lineheight;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
@@ -124,7 +131,7 @@
 
   @media (min-width: $desktop-width) {
     width: 370px;
-    padding: 45px 60px 60px 80px;
+    padding: 35px 60px 60px 80px;
     border-left: none;
   }
 }
@@ -141,6 +148,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
+    padding-right: 0;
   }
 }

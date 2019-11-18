@@ -1,1 +1,12 @@
+.page-main {
+  margin-bottom: 55px;
 
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 103px;
+  }
+}
