@@ -1,11 +1,14 @@
 .field-actions {
+  margin-top: -5px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
-    padding-right: 25px;
+    margin-top: 0;
+    padding-right: 50px;
     padding-left: 50px;
   }
 
@@ -25,6 +28,7 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    margin-bottom: 0;
     font-size: $font-size--larger;
     line-height: $line-height;
   }
@@ -33,6 +37,6 @@
 .field-actions__btn {
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 10px 30px;
+    padding: 14px 30px;
   }
 }

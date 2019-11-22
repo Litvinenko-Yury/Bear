@@ -1,5 +1,9 @@
 .form {
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
 }
 
 .form__fieldset-wrap {
@@ -36,13 +40,15 @@
   &--first {
     @media (min-width: $tablet-width) {
       z-index: 1;
-      padding-bottom: 12px;
+      padding-top: 65px;
+      padding-bottom: 0;
     }
   }
 
   &--last {
     @media (min-width: $tablet-width) {
-      margin-top: -35px;
+      margin-top: -25px;
+      padding-top: 65px;
     }
   }
 }
@@ -68,9 +74,15 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 65px;
+    top: 68px;
     margin-bottom: 0;
     padding-right: 0;
     font-size: $font-size-h3;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 65px;
+    left: 60px;
+
   }
 }

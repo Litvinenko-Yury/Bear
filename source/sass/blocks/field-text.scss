@@ -15,10 +15,15 @@
 
     &:not(:last-child) {
       margin-bottom: 40px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 20px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -2px;
     padding-right: 175px;
     padding-left: 175px;
   }
@@ -41,6 +46,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     margin-right: 25px;
     font-size: $font-size--large + 1px;
     font-weight: 700;
@@ -80,6 +86,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding-left: 20px;
     font-size: $font-size--large + 1px;
   }
 
@@ -94,7 +101,12 @@
   &--textarea {
     display: block;
     padding: 17px;
+    padding-bottom: 35px;
     border: 2px solid $text-color;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 25px;
+    }
 
     &:hover {
       border-color: $color-main;
@@ -115,4 +127,12 @@
   transform: translateY(-50%);
 
   fill: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
+  }
 }

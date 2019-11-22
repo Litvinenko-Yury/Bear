@@ -24,12 +24,20 @@
   margin-bottom: 21px;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-last-child(3) {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
-    
-    // @media (min-width: $tablet-width) {
-    //   margin-bottom: 0;
-    // }
   }
 
   &:nth-last-child(2) {
@@ -56,8 +64,16 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 245px;
+    width: 240px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
+
 }
 
 .field-checkbox__name-text::before {
@@ -73,6 +89,11 @@
 
   border: 2px solid $text-color;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 54px;
+    height: 54px;
+  }
 }
 
 .field-checkbox__name-text:hover::before {
@@ -97,6 +118,13 @@
 
   background: url("../img/vector/icon-tick.svg") no-repeat center;
   background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 24px;
+
+    left: 12px;
+  }
 }
 
 /*делаем чек-бокс доступным с клавиатуры*/
