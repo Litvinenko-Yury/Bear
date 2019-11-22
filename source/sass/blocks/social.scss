@@ -1,5 +1,4 @@
 .social {
-  outline: 1px dotted green;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,8 +17,6 @@
 }
 
 .social__link-wrap {
-  outline: 1px dotted blue;
-
   &:not(:last-child) {
     margin-right: 27px;
   }

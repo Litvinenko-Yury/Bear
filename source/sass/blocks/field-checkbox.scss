@@ -1,6 +1,4 @@
 .field-checkbox {
-  outline: 1px dotted coral;
-
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -73,7 +71,6 @@
   @media (min-width: $desktop-width) {
     width: 230px;
   }
-
 }
 
 .field-checkbox__name-text::before {
