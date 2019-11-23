@@ -58,8 +58,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -68,8 +68,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+
     width: $content-width--desk;
-    margin: 0 auto;
+    height: 150px;
+
     padding-right: 0;
     padding-left: 0;
   }
