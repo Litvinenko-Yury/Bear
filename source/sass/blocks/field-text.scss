@@ -94,6 +94,10 @@
 
   &--icon {
     padding-right: 40px;
+
+    @media (min-width: $tablet-width) {
+      background: $gray-base;
+    }
   }
 
   &--textarea {
@@ -117,8 +121,6 @@
 }
 
 .field-text__icon {
-  background: coral;
-
   position: absolute;
   right: 5px;
   top: 50%;

@@ -33,10 +33,18 @@
   height: 52px;
   justify-content: center;
   align-items: center;
-  border: 2px solid #444444;
+  text-transform: uppercase;
+  border: 2px solid $gray--dark;
 
   @media (min-width: $tablet-width) {
     width: 112px;
+    font-size: $font-size--larger;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $gray--darker;
   }
 }
 

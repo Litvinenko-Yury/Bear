@@ -61,6 +61,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    align-items: flex-end;
     width: 100%;
     padding-right: 52px;
     padding-left: 52px;
@@ -75,7 +76,7 @@
 }
 
 .first-screen__list-item {
-  display: flex; //что-бы обе ссылки были одинаковые по высоте при заполнении текстом.
+  //display: flex; //что-бы обе ссылки были одинаковые по высоте при заполнении текстом.
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -105,9 +106,14 @@
   &--1 {
     background-color: $link-bg;
 
-    &:hover,
-    &:focus {
+    &:hover {
+      padding-bottom: 55px;
       background-color: darken($link-bg, 5%);
+      transition: padding-bottom $transition-time--show;
+    }
+
+    &:not(:hover) {
+      transition: padding-bottom $transition-time--show;
     }
 
     &:active .first-screen__link-text {
@@ -118,9 +124,14 @@
   &--2 {
     background-color: $link-bg-2;
 
-    &:hover,
-    &:focus {
+    &:hover {
+      padding-bottom: 55px;
       background-color: darken($link-bg-2, 5%);
+      transition: padding-bottom $transition-time--show;
+    }
+
+    &:not(:hover) {
+      transition: padding-bottom $transition-time--show;
     }
 
     &:active .first-screen__link-text {

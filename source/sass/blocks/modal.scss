@@ -1,17 +1,56 @@
-.modal {
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  background-color: rgba(255, 255, 255, 0.85);
+
+  animation: modal__fade 0.3s;
+}
+
+@keyframes modal__fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 20;
   display: none;
 
+  /*это стилизация модального сообщения*/
   width: 320px;
-  margin: 0 auto;
   padding: 36px 30px 46px 30px;
-  text-transform: uppercase;
+  background: #ffffff;
   border: solid 1px #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  animation: modal__fade 0.6s;
 
   @media (min-width: $tablet-width) {
     width: 566px;
-    padding: 51px 108px 46px 108px;
+    padding: 51px 107px 46px 107px;
   }
+}
+
+.modal__content--show {
+  display: block;
+}
+
+.modal__overlay--show {
+  display: block;
 }
 
 .modal__title {
@@ -19,10 +58,13 @@
   padding-right: 30px;
   padding-left: 30px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding: 0;
+    font-size: $font-size-h2 + 5px;
+    letter-spacing: -1px;
   }
 }
 
@@ -33,9 +75,29 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+    font-size: $font-size--larger;
   }
 }
 
 .modal__form-fieldset {
   border: none;
+}
+
+.modal__btn {
+  color: #ffffff;
+  background-color: $color-main;
+  border-color: $color-main;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+    background-color: $color-main;
+    border-color: $color-main;
+  }
+
+  &:active {
+    color: $gray--darkest;
+    background-color: darken($color-main, 10%);
+    border-color: darken($color-main, 10%);
+  }
 }

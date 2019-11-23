@@ -112,7 +112,7 @@
           </div>
           <div class="card__footer">
             <span class="card__price">1 200 руб.</span>
-            <button class="btn  card__buy" aria-label="Добавить в корзину">
+            <button class="btn  card__buy  btn-modal-open" aria-label="Добавить в корзину">
               <svg width="20" height="20" role="img">
                 <use xlink:href="#icon-cart" />
               </svg>
@@ -142,7 +142,7 @@
           </div>
           <div class="card__footer">
             <span class="card__price">690 руб.</span>
-            <button class="btn  card__buy" aria-label="Добавить в корзину">
+            <button class="btn  card__buy  btn-modal-open" aria-label="Добавить в корзину">
               <svg width="20" height="20" role="img">
                 <use xlink:href="#icon-cart" />
               </svg>
@@ -172,7 +172,7 @@
           </div>
           <div class="card__footer">
             <span class="card__price">1500 руб.</span>
-            <button class="btn  card__buy" aria-label="Добавить в корзину">
+            <button class="btn  card__buy  btn-modal-open" aria-label="Добавить в корзину">
               <svg width="20" height="20" role="img">
                 <use xlink:href="#icon-cart" />
               </svg>
@@ -255,44 +255,49 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <span class="modal__text">Выберите размер:</span>
+    <div class="modal__overlay"></div>
 
-    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="modal__form-fieldset">
-        <ul class="field-radio-modal">
-          <li class="field-radio-modal__input-wrap">
-            <label class="field-radio-modal__label">
-              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="S" checked>
-              <span class="field-radio-modal__name-text">S</span>
-            </label>
-          </li>
+    <div class="modal__content">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__text">Выберите размер:</span>
 
-          <li class="field-radio-modal__input-wrap">
-            <label class="field-radio-modal__label">
-              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="M">
-              <span class="field-radio-modal__name-text">M</span>
-            </label>
-          </li>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal__form-fieldset">
+          <ul class="field-radio-modal">
+            <li class="field-radio-modal__input-wrap">
+              <label class="field-radio-modal__label">
+                <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="S" checked>
+                <span class="field-radio-modal__name-text">S</span>
+              </label>
+            </li>
 
-          <li class="field-radio-modal__input-wrap">
-            <label class="field-radio-modal__label">
-              <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="L">
-              <span class="field-radio-modal__name-text">L</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+            <li class="field-radio-modal__input-wrap">
+              <label class="field-radio-modal__label">
+                <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="M">
+                <span class="field-radio-modal__name-text">M</span>
+              </label>
+            </li>
 
-      <div class="field-actions">
-        <button class="btn" type="submit">Добавить</button>
-      </div>
-    </form>
+            <li class="field-radio-modal__input-wrap">
+              <label class="field-radio-modal__label">
+                <input class="field-radio-modal__input" type="radio" name="radio-field-modal" value="L">
+                <span class="field-radio-modal__name-text">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="field-actions  field-actions__modal">
+          <button class="btn  modal__btn" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
   </section>
 
   <script src="js/ofi.min.js"></script>
   <script>objectFitImages();</script>
   <!-- <script src="js/script.js"></script> -->
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

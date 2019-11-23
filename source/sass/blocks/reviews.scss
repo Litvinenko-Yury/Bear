@@ -145,11 +145,11 @@
 
   &:hover .reviews__btn-svg,
   &:focus .reviews__btn-svg {
-    fill: $gray--darkenest;
+    fill: $gray--darkest;
   }
 
   &:active .reviews__btn-svg {
-    fill: $gray--darkest;
+    fill: $gray--darkenest;
   }
 }
 
