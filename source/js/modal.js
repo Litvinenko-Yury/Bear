@@ -5,11 +5,9 @@ var btnModalClose = document.querySelector(".btn-modal-close");
 document.onclick = function (event) { /*1. вешаем единый обработчик на элемент document*/
   /*это нужно для того, что-бы много .btn-modal-open можно было ставить в любом месте*/
   var target = event.target; /*2. где был клик?*/
-  console.log(target);
 
   while (target != document) {
     if (target.classList.contains("btn-modal-open")) { /* 3. на .btn-modal-open? то, что надо!*/
-      console.log("клик на .btn-modal-open");
 
       /*события по кнопке ".btn-modal-open"*/
       popup.classList.add("modal__content--show");
@@ -19,12 +17,8 @@ document.onclick = function (event) { /*1. вешаем единый обраб�
     } else {/* 4. не на .btn-modal-open? нет, не подходит... */
       console.log("промазал");
       target = target.parentNode; /*5. поднимаем target на уровень вверх по иерархии родителей от event.target и выше*/
-      console.log("вывожу target на уровень выше");
-      console.log(target);
     }
   };
-
-  console.log("вышел из цикла");
 };
 
 /* 6. Если клик был мимо .btn-modal-open, цикл дойдет вверх до document, и обработчик закончит работу*/
