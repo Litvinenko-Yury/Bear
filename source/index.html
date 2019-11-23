@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <title>Мишка-главная</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script>
   <script>
     document.createElement("picture");
   </script>
@@ -233,7 +234,7 @@
         </li>
       </ul>
 
-      <div class="map" id="map">MAP</div>
+      <div class="map" id="map"></div>
 
       <div class="contact__btn-wrap">
         <a href="feedback.html" class="btn  contact__btn">НАПИШИТЕ НАМ</a>
@@ -321,6 +322,7 @@
   <script src="js/ofi.min.js"></script>
   <script>objectFitImages();</script>
   <!-- <script src="js/script.js"></script> -->
+  <script src="js/script-map.js" async></script>
 </body>
 
 </html>
