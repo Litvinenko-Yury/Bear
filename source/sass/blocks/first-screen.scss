@@ -76,7 +76,6 @@
 }
 
 .first-screen__list-item {
-  //display: flex; //что-бы обе ссылки были одинаковые по высоте при заполнении текстом.
   list-style: none;
 
   @media (min-width: $tablet-width) {

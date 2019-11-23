@@ -17,7 +17,6 @@
   }
 
   > span {
-    // stylelint-disable-line  selector-combinator-blacklist
     /*это центральная полоса бургера*/
     display: inline-block;
     position: relative;
@@ -53,7 +52,6 @@
 
   &--close {
     > span {
-      // stylelint-disable-line  selector-combinator-blacklist
       transition: background $transition-time--burger 0s;
       background: transparent;
 

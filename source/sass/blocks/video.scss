@@ -53,14 +53,12 @@
 }
 
 .video__title {
-  border: 1px dotted coral;
-
   @media (min-width: $tablet-width) {
     @include h3-fontsize-lineheight;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 10px;
+    margin-top: 12px;
   }
 }
 
