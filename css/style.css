@@ -2662,6 +2662,8 @@ blockquote {
   padding: 0;
   border: none;
   cursor: pointer; }
+  .video__btn:hover {
+    background: transparent; }
   .video__btn > svg {
     margin: auto; }
     .video__btn > svg:hover, .video__btn > svg:focus {
