@@ -93,6 +93,10 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background: transparent;
+  }
+
   & > svg {
     margin: auto;
     $width: 101px; // переменная, чтобы можно было увеличить ширину на 20%
