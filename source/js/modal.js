@@ -1,10 +1,10 @@
-var popup = document.querySelector(".modal__content");
-var modalOverlay = document.querySelector(".modal__overlay");
-var btnModalClose = document.querySelector(".btn-modal-close");
+let popup = document.querySelector(".modal__content");
+let modalOverlay = document.querySelector(".modal__overlay");
+let btnModalClose = document.querySelector(".btn-modal-close");
 
 document.onclick = function (event) { /*1. вешаем единый обработчик на элемент document*/
   /*это нужно для того, что-бы много .btn-modal-open можно было ставить в любом месте*/
-  var target = event.target; /*2. где был клик?*/
+  let target = event.target; /*2. где был клик?*/
 
   while (target != document) {
     if (target.classList.contains("btn-modal-open")) { /* 3. на .btn-modal-open? то, что надо!*/
@@ -15,7 +15,6 @@ document.onclick = function (event) { /*1. вешаем единый обраб�
 
       break;
     } else {/* 4. не на .btn-modal-open? нет, не подходит... */
-      console.log("промазал");
       target = target.parentNode; /*5. поднимаем target на уровень вверх по иерархии родителей от event.target и выше*/
     }
   };
@@ -25,7 +24,7 @@ document.onclick = function (event) { /*1. вешаем единый обраб�
 
 /*2-Закрыть модальное окно:*/
 /*события по клику на затененный фон*/
-modalOverlay.addEventListener("click", function (event) {
+modalOverlay.addEventListener('click', function (event) {
   event.preventDefault();
   popup.classList.remove("modal__content--show");
   modalOverlay.classList.remove("modal__overlay--show");

@@ -16,7 +16,9 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require("gulp-uglify");
+//var concat = require('gulp-concat');
+// var uglify = require("gulp-uglify");
+let uglify = require('gulp-uglify-es').default;
 const ghPages = require('gh-pages');
 const path = require('path');
 

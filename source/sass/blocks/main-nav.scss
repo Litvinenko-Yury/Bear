@@ -12,6 +12,22 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
+
+  &--js {
+    @media (max-width: $tablet-width - 1) {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height $transition-time--show * 2;
+    }
+  }
+
+  &--show {
+    @media (max-width: $tablet-width - 1) {
+      max-height: 400px;
+      overflow: hidden;
+      transition: max-height $transition-time--show * 2;
+    }
+  }
 }
 
 .main-nav__item {
